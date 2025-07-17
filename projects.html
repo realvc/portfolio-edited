@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Vibhu Charan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0c0c0c;
+      color: #f0f0f0;
+    }
+    nav {
+      background: #000;
+      padding: 1em 2em;
+      display: flex;
+      gap: 2em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffd5;
+    }
+    .container {
+      padding: 4em 2em;
+    }
+    .project {
+      margin-bottom: 2em;
+      padding: 1em;
+      border-left: 4px solid #00ffd5;
+      background: #1c1c1c;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>My Projects</h1>
+
+    <div class="project">
+      <h3>🧠 ThreadMind</h3>
+      <p>A browser extension that serves as your second brain — remembering everything intelligently while you explore the web.</p>
+    </div>
+
+    <div class="project">
+      <h3>📰 BiasSniff</h3>
+      <p>A real-time media bias detection tool built with lightweight in-browser NLP. Cuts through misinformation.</p>
+    </div>
+
+    <div class="project">
+      <h3>✈️ NeuroFlight OS</h3>
+      <p>A real-time aviation nervous system with pilot stress sensing, swarm learning between aircrafts, and reflex mesh safety systems.</p>
+    </div>
+  </div>
+</body>
+</html>
