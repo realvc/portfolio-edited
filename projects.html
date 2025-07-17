@@ -1,149 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Vibhu Charan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet"/>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0a0a0a;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      position: fixed;
-      width: 100%;
-      padding: 20px 5%;
-      background: rgba(10, 10, 10, 0.7);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 900;
-    }
-
-    nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin-left: 30px;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    main {
-      padding: 120px 5% 60px;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 900;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: #141414;
-      border-radius: 18px;
-      padding: 25px;
-      transition: transform 0.4s ease, background 0.4s ease;
-      border: 1px solid #222;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      background: #1f1f1f;
-    }
-
-    .card h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: #ccc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      color: #777;
-      font-size: 0.9rem;
-      margin-top: 60px;
-    }
-
-    @media screen and (max-width: 600px) {
-      h2 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects – Vibhu Charan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-
-  <header>
-    <h1>Vibhu Charan</h1>
-    <nav>
+<body class="projects-body">
+  <header class="header">
+    <h1 class="logo">Vibhu Charan</h1>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
+  <main class="projects-container fade-in-up">
+    <section class="projects-intro">
+      <h2>Selected Work</h2>
+      <p>Each project is designed with scale, relevance, and long-term value in mind — not just for today, but for the systems of tomorrow.</p>
+    </section>
+
+    <div class="project-grid">
+      
+      <div class="project-card slide-in-left">
         <h3>🧠 ThreadMind</h3>
-        <p>Your second brain for the web. Captures, sorts, and recalls any piece of online info in real-time using smart memory algorithms and browser-native AI.</p>
+        <p>A second-brain memory system for the web — Chrome extension that captures, organizes, and connects knowledge across tabs and time. UX-first, architecture-aware, and privacy-respecting.</p>
+        <a href="https://github.com/realvc" target="_blank">View Project</a>
       </div>
-      <div class="card">
-        <h3>🔍 BiasSniff</h3>
-        <p>A Chrome extension that detects sentiment and ideological bias in headlines using VADER NLP — super lightweight, fast, and privacy-safe.</p>
+
+      <div class="project-card slide-in-up">
+        <h3>🚀 NeuroFlight OS</h3>
+        <p>A real-time aviation nervous system with pilot stress detection, reflex mesh safety, and aircraft-to-aircraft swarm learning. Proof of concept built in under 1 week using open systems.</p>
+        <a href="https://github.com/realvc" target="_blank">Explore Code</a>
       </div>
-      <div class="card">
-        <h3>✈️ NeuroFlight OS</h3>
-        <p>A real-time aviation nervous system that senses pilot stress, passenger safety, and enables swarm learning across aircraft. Future of aviation AI.</p>
+
+      <div class="project-card slide-in-right">
+        <h3>🕵️ BiasSniff</h3>
+        <p>Bias and sentiment analyzer for news headlines using a lightweight in-browser VADER engine. Designed for transparency, speed, and bias accountability in online media ecosystems.</p>
+        <a href="https://github.com/realvc" target="_blank">Try Extension</a>
       </div>
-      <div class="card">
-        <h3>🧬 Oral Cancer RiskNet</h3>
-        <p>Built a deep GAN + survival model pipeline with SEER data and real cancer images to predict mortality and classify complex risk traits.</p>
+
+      <div class="project-card slide-in-left">
+        <h3>🧬 OralGAN-X</h3>
+        <p>GAN-powered survival risk analysis system for oral cancer lesions. Integrates image data with SEER metadata, generating high-quality synthetic clinical datasets for deeper prognosis models.</p>
+        <a href="https://github.com/realvc" target="_blank">View Pipeline</a>
       </div>
+
+      <div class="project-card slide-in-up">
+        <h3>📊 Power BI Dashboards</h3>
+        <p>Real-time interactive dashboards developed using Microsoft Power BI — business insights, segmentation analytics, and metric visualizations to drive informed enterprise decisions.</p>
+        <a href="https://github.com/realvc" target="_blank">View Insights</a>
+      </div>
+
+      <div class="project-card slide-in-right">
+        <h3>🌐 Cloud Architectures</h3>
+        <p>Multiple AWS-based scalable systems using EC2, S3, Lambda, and RDS. Trained in AWS Cloud Solutions Architect Associate program — with deploy-ready examples and fault-tolerant builds.</p>
+        <a href="https://github.com/realvc" target="_blank">Browse Infra</a>
+      </div>
+
     </div>
   </main>
 
-  <footer>
-    &copy; 2025 Vibhu Charan | Making a difference, one project at once.
+  <footer class="footer">
+    <p>&copy; 2025 Vibhu Charan. Minimal noise. Maximum outcomes.</p>
   </footer>
-
 </body>
 </html>

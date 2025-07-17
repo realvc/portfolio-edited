@@ -3,129 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vibhu Charan | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet"/>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0a0a0a;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      position: fixed;
-      width: 100%;
-      padding: 20px 5%;
-      background: rgba(10, 10, 10, 0.7);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 900;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin-left: 30px;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      padding: 0 5%;
-      background: radial-gradient(ellipse at center, #151515 0%, #0a0a0a 100%);
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      font-weight: 900;
-      animation: fadeInUp 1.2s ease-out;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 20px;
-      color: #ccc;
-      max-width: 700px;
-      animation: fadeInUp 1.5s ease-out;
-    }
-
-    .hero button {
-      margin-top: 30px;
-      padding: 14px 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
-      color: #fff;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .hero button:hover {
-      background: linear-gradient(135deg, #444, #111);
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0px);
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .hero h2 {
-        font-size: 2rem;
-      }
-
-      nav a {
-        margin-left: 15px;
-      }
-    }
-  </style>
+  <title>Vibhu Charan — AI & Systems Architect</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="fadeIn">
 
-  <header>
-    <h1>Vibhu Charan</h1>
+  <header class="fadeInDown">
+    <h1 class="hero-title">Vibhu Charan</h1>
+    <p class="subtitle">AI Systems Architect • Experience Designer • Creative Technologist</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -133,18 +18,66 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div>
-      <h2>Engineering Intelligence. Designing Futures.</h2>
+  <main>
+    <section class="intro fadeInUp">
+      <h2>Welcome to My Digital Space</h2>
       <p>
-        I'm Vibhu — an AI & Big Data developer blending storytelling, systems thinking, and real-world impact. I build bold systems like <strong>ThreadMind</strong>, <strong>BiasSniff</strong>, and <strong>NeuroFlight OS</strong>, while shaping tech through creativity and precision.
+        I’m Vibhu — a builder of intelligent systems, a creative technologist, and a multidisciplinary thinker who thrives at the intersection of logic and aesthetic. While many chase specialization, I’ve spent years defying the grain — integrating product intuition, deep data systems, design psychology, and narrative theory into coherent, impactful technologies.
       </p>
-      <button onclick="location.href='projects.html'">See My Work</button>
-    </div>
-  </section>
+      <p>
+        My identity as a creator isn’t siloed. I don’t just write code — I write trajectories. Each system I design is an embodiment of mental frameworks, behavioral insights, and computational efficiency. Whether it’s real-time feedback loops in aviation safety or browser-based intelligence augmentation, I approach each challenge with one question: how can we elevate not just performance, but perception?
+      </p>
+    </section>
+
+    <section class="philosophy fadeIn">
+      <h2>Philosophy</h2>
+      <p>
+        Innovation, to me, begins with silence — a kind of interior calm that lets complexity emerge, not from noise, but from necessity. I don’t believe in tech for tech’s sake. I believe in technological honesty. In systems that not only work but breathe — ones that adapt, provoke, and most importantly, serve a larger narrative of human betterment.
+      </p>
+      <p>
+        My work embodies duality: it’s emotional and technical, abstract and procedural. I write algorithms that think and interfaces that feel. I want people to not only use my systems — I want them to remember how it made them think. That’s the bar I set for anything I build.
+      </p>
+    </section>
+
+    <section class="approach fadeInUp">
+      <h2>Approach</h2>
+      <p>
+        Every project begins with chaos. Not confusion — but potential. I architect systems from first principles, beginning with unanswered questions and framing them not just as problems to solve, but as hypotheses to test. I’m obsessed with clean pipelines, scalable architectures, and fail-safe mechanisms — but also with the moment the user sighs in relief because a design decision made sense without explanation.
+      </p>
+      <p>
+        My process is deeply iterative and surgically precise. I adopt a zero-assumption mindset, yet challenge every standard until elegance emerges. I believe every function must serve a psychological purpose. Every color must inform emotion. Every interaction must reduce friction. And above all — every build must raise the ceiling on what’s possible.
+      </p>
+    </section>
+
+    <section class="values fadeIn">
+      <h2>What I Stand For</h2>
+      <ul>
+        <li><strong>Systems Thinking:</strong> Everything is a system — from neurons to networks. I build with the macro in mind and the micro in focus.</li>
+        <li><strong>First-Principle Logic:</strong> Buzzwords don’t build impact. Clarity of reasoning does.</li>
+        <li><strong>Aesthetic Intelligence:</strong> The visual must reflect the invisible — design is an act of compression, not decoration.</li>
+        <li><strong>Execution > Intention:</strong> The world doesn’t reward plans. It rewards results. I build for measurable disruption.</li>
+        <li><strong>Ethical Tech:</strong> Power demands responsibility. I embed trust into every build — by default, not as an afterthought.</li>
+      </ul>
+    </section>
+
+    <section class="signature fadeInUp">
+      <h2>The Signature</h2>
+      <p>
+        If there’s a throughline across everything I do — it’s frictionless brilliance. I want my work to feel inevitable. As if the solution had been waiting all along, and I simply carved the tunnel through which it emerged.
+      </p>
+      <p>
+        This is not just a portfolio. It’s a statement. A declaration that engineering and storytelling, logic and love, data and design — they don’t have to live apart. I build for that intersection. And you’ve just stepped into it.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Vibhu Charan | All rights reserved.
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2025 Vibhu Charan. All rights reserved.</p>
   </footer>
 
 </body>
