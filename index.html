@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibhu Charan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      padding: 20px 5%;
+      background: rgba(10, 10, 10, 0.7);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 0 5%;
+      background: radial-gradient(ellipse at center, #151515 0%, #0a0a0a 100%);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #ccc;
+      max-width: 700px;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 14px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: linear-gradient(135deg, #444, #111);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vibhu Charan</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Engineering Intelligence. Designing Futures.</h2>
+      <p>
+        I'm Vibhu — an AI & Big Data developer blending storytelling, systems thinking, and real-world impact. I build bold systems like <strong>ThreadMind</strong>, <strong>BiasSniff</strong>, and <strong>NeuroFlight OS</strong>, while shaping tech through creativity and precision.
+      </p>
+      <button onclick="location.href='projects.html'">See My Work</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vibhu Charan | All rights reserved.
+  </footer>
+
+</body>
+</html>
